@@ -58,6 +58,36 @@ namespace CSPractice1
             Console.WriteLine(!true);
             Console.WriteLine(true && false);
             Console.WriteLine(true || false);
+
+            // #1 12-4 변수
+            // 변수(Variable)
+            string name = "문자열 자료형";
+
+            // #1 12-5 복합대입연산자
+            // += -= *= /= %=
+            string output = "Hello";
+            output += " World";
+            Console.WriteLine(output);
+
+            // #1 12-6 증감연산자
+            int number = 10;
+            Console.WriteLine(number++); // 10
+            Console.WriteLine(++number); // 12
+            Console.WriteLine(number--); // 12
+            Console.WriteLine(--number); // 10
+
+            // #1 12-8 var 키워드
+            var varnumber = 20;
+            // var abc; // var키워드는 초기화를 통해 자료형을 판단하므로 반드시 초기화를 해야한다
+
+            // #1 12-9 입력
+            string input = Console.ReadLine();
+            Console.WriteLine(input);
+
+            // #1 12-10 자료형 변환
+            // !중요!
+
+
         }
     }
 }
