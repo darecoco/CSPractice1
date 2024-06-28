@@ -117,6 +117,10 @@ namespace CSPractice1
             Console.WriteLine(number % 2 == 0 ? "짝수" : "홀수");
             Console.WriteLine(number % 2 != 0 ? "홀수" : "짝수");
             Console.WriteLine(number % 2 != 1 ? "짝수" : "홀수");
+
+            // #5 14-1 반복문과 배열
+            int[] intArray = new int[100];
+            Console.WriteLine(intArray[99]);
         }
     }
 }
