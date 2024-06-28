@@ -130,6 +130,13 @@ namespace CSPractice1
                 Console.WriteLine(intArray2[i]);
                 i++; // 탈출을 위한 변수
             }
+
+            // #5 14-6 foreach 반복문
+            string[] foreachArray = { "사과", "배", "포도" };
+            foreach (var item in foreachArray)
+            {
+                Console.WriteLine(item);
+            }
         }
     }
 }
