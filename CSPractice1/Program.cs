@@ -100,6 +100,18 @@ namespace CSPractice1
             {
                 // other
             }
+
+            // #2 13-2 switch 조건문
+            int v = 0;
+            switch(v)
+            {
+                case 0: // case문은 상수여야 한다.
+                    //0
+                    break; //또한 C#은 break문을 꼭 써야 한다
+                default:
+                    //other
+                    break;
+            }
         }
     }
 }
