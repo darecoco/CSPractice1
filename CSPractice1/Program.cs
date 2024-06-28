@@ -112,6 +112,11 @@ namespace CSPractice1
                     //other
                     break;
             }
+
+            // #2 13-6 삼항연산자
+            Console.WriteLine(number % 2 == 0 ? "짝수" : "홀수");
+            Console.WriteLine(number % 2 != 0 ? "홀수" : "짝수");
+            Console.WriteLine(number % 2 != 1 ? "짝수" : "홀수");
         }
     }
 }
