@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -149,6 +150,8 @@ namespace CSPractice1
             Console.WriteLine(Math.Max(52, 273)); //273
             Console.WriteLine(Math.Min(52, 273)); //52
             Console.WriteLine(Math.PI); //3.141592...
+
+            // #3 21-3 클래스 생성
         }
     }
 }
