@@ -137,6 +137,18 @@ namespace CSPractice1
             {
                 Console.WriteLine(item);
             }
+
+            // #3 21-2 클래스 사용
+            Random random = new Random();
+            Console.WriteLine(random.Next(1, 7)); // 두 번째 파라미터인 maxValue는 포함되지 않는 범위이다.
+
+            Console.WriteLine(Math.Abs(-9)); //절댓값: 9
+            Console.WriteLine(Math.Ceiling(52.273)); //올림: 53
+            Console.WriteLine(Math.Floor(52.273)); //내림: 52
+            Console.WriteLine(Math.Round(52.273)); //반올림: 52
+            Console.WriteLine(Math.Max(52, 273)); //273
+            Console.WriteLine(Math.Min(52, 273)); //52
+            Console.WriteLine(Math.PI); //3.141592...
         }
     }
 }
