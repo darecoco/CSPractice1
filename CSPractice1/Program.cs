@@ -8,6 +8,19 @@ using System.Threading.Tasks;
 
 namespace CSPractice1
 {
+
+    class MyMath
+    {
+        public static int classVar = 1; //클래스 변수
+        public int instanceVar = 2; //인스턴스 변수
+        public static int Abs(int input) //클래스 메서드
+        {
+            Console.WriteLine(classVar);
+            // Console.WriteLine(instanceVar); 
+            // 클래스 메서드에서 인스턴스 변수는 접근 불가
+            return (input >= 0) ? input : -input;
+        }
+    }
     internal class Program
     {
         static void Main(string[] args)
@@ -169,6 +182,8 @@ namespace CSPractice1
             // #3 21-5 클래스 변수
             Console.WriteLine(Product.TAX_RATIO);
             // Console.WriteLine(p1.TAX_RATIO);  // Java와 달리 C#에서 클래스 변수는 반드시 클래스로 접근해야 한다.
+
+            // #4 22-3 클래스 메서드
         }
     }
 }
