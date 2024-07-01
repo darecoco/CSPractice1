@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Net.Http.Headers;
 using System.Runtime.InteropServices;
@@ -8,6 +9,25 @@ using System.Threading.Tasks;
 
 namespace CSPractice1
 {
+    class Box
+    {
+        public int width { get; set; } //getter, setter의 역할을 함
+        private int height;
+
+        public int Height
+        {
+            get { return height; }
+            set
+            {
+                if (value > 0)
+                {
+                    height = value;
+                }
+                else { throw new Exception(); }
+            }
+
+        }
+    }
     class Sample
     {
         public static int value;
@@ -221,8 +241,13 @@ namespace CSPractice1
             Sample sm = new Sample();
             Console.WriteLine("세 번재 위치");
 
-            // #4 22-7 소멸자
+                // #4 22-7 소멸자
 
+                // #4 22-8 속성(Property)
+                Box b = new Box();
+                b.width = 100;
+                b.Height = 100;
+                b.Height = -100; //예외 발생
         }
     }
 }
