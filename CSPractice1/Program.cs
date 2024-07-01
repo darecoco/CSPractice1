@@ -20,6 +20,10 @@ namespace CSPractice1
         {
             Console.WriteLine("(인스턴스) 생성자 호출");
         }
+        ~Sample()
+        {
+            Console.WriteLine("소멸자 호출");
+        }
     }
 
     class MyMath
@@ -216,6 +220,9 @@ namespace CSPractice1
             //인스턴스 생성자 호출
             Sample sm = new Sample();
             Console.WriteLine("세 번재 위치");
+
+            // #4 22-7 소멸자
+
         }
     }
 }
