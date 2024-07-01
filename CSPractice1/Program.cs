@@ -16,10 +16,14 @@ namespace CSPractice1
         public static int Abs(int input) //클래스 메서드
         {
             Console.WriteLine(classVar);
-            // Console.WriteLine(instanceVar); 
             // 클래스 메서드에서 인스턴스 변수는 접근 불가
+            // Console.WriteLine(instanceVar); 
             return (input >= 0) ? input : -input;
         }
+
+        //메서드 시그네이쳐(이름, 매개변수)가 겹치면 안 됨
+        // public static double Abs(int input) { return 0; }
+        public static double Abs(double input) { return 0; }
     }
     internal class Program
     {
@@ -184,6 +188,12 @@ namespace CSPractice1
             // Console.WriteLine(p1.TAX_RATIO);  // Java와 달리 C#에서 클래스 변수는 반드시 클래스로 접근해야 한다.
 
             // #4 22-3 클래스 메서드
+
+            // #4 22-4 메서드 오버로딩
+            Console.WriteLine(MyMath.Abs(-10)); // Abs(int)
+            Console.WriteLine(MyMath.Abs(10.0)); // Abs(double)
+            Console.WriteLine(MyMath.Abs(-10L)); // Abs(double)
+            Console.WriteLine(MyMath.Abs(3.0f)); // Abs(double)
         }
     }
 }
