@@ -165,6 +165,10 @@ namespace CSPractice1
 
             Product p2 = new Product() { name = "포켓몬 포켓파플레 대타출동 봉제인형", price = 42000 };
             Product p3 = new Product() { price = 4500 };
+
+            // #3 21-5 클래스 변수
+            Console.WriteLine(Product.TAX_RATIO);
+            // Console.WriteLine(p1.TAX_RATIO);  // Java와 달리 C#에서 클래스 변수는 반드시 클래스로 접근해야 한다.
         }
     }
 }
