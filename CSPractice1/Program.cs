@@ -64,6 +64,15 @@ namespace CSPractice1
     }
     internal class Program
     {
+        class Test
+        {
+            public int value = 10;
+        }
+        static void Change(Test v)
+        {
+            v.value = 20;
+        }
+
         static void Main(string[] args)
         {
             //컨텍스트 키워드
@@ -241,13 +250,19 @@ namespace CSPractice1
             Sample sm = new Sample();
             Console.WriteLine("세 번재 위치");
 
-                // #4 22-7 소멸자
+            // #4 22-7 소멸자
 
-                // #4 22-8 속성(Property)
-                Box b = new Box();
-                b.width = 100;
-                b.Height = 100;
-                b.Height = -100; //예외 발생
+            // #4 22-8 속성(Property)
+            Box b = new Box();
+            b.width = 100;
+            b.Height = 100;
+            //b.Height = -100; //예외 발생
+
+            // #4 22-9 값 복사와 참조복사
+            Test test = new Test();
+            test.value = 100;
+            Change(test);
+            Console.WriteLine(test.value); // 20
         }
     }
 }
