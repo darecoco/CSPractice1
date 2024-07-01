@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http.Headers;
 using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
@@ -152,6 +153,18 @@ namespace CSPractice1
             Console.WriteLine(Math.PI); //3.141592...
 
             // #3 21-3 클래스 생성
+
+            // #3 21-4 인스턴스 변수
+            User user1 = new User();
+            user1.name = "김미림";
+            user1.phoneNumber = "010-0101-0101";
+
+            Product p1 = new Product();
+            p1.name = "공책";
+            p1.price = 1234;
+
+            Product p2 = new Product() { name = "포켓몬 포켓파플레 대타출동 봉제인형", price = 42000 };
+            Product p3 = new Product() { price = 4500 };
         }
     }
 }
